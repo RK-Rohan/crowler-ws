@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+                xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+      
+
+ <!--
+                - The controllers are autodetected POJOs labeled with the @Controller annotation.
+        -->
+        <context:component-scan base-package="it.stasbranger.crowlerws.ws.mvc"/>
+
+ <!-- this bean with the well known name generates view names for us -->
+    <bean id="viewNameTranslator" class="org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator"/>
+
+    <bean id="urlController"
+        class="org.springframework.web.servlet.mvc.UrlFilenameViewController" />
+
+    <!-- the application context definition for the springapp DispatcherServlet  -->
+	<bean id="searchBO" class="it.stasbranger.crowlerws.ws.bo.SearchBO" />
+	<bean id="clientiBO" class="it.stasbranger.crowlerws.ws.bo.ClientiBO" />
+	<bean id="ricercaBO" class="it.stasbranger.crowlerws.ws.bo.RicercaBO" /> 
+	
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+	
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="messages"/>
+    </bean>
+    
+    <bean id="handlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+	<bean name="/listaClienti.html" class="it.stasbranger.crowlerws.ws.mvc.ListaClientiController" >
+		<property name="clientiBO" ref="clientiBO"/>
+	</bean>	
+    <bean name="/search.html" class="it.stasbranger.crowlerws.ws.mvc.SearchController">
+        <property name="sessionForm" value="true"/>
+        <property name="commandName" value="searchModel"/>
+        <property name="commandClass" value="it.stasbranger.crowlerws.ws.mvc.SearchModel"/>
+         <property name="validator">
+            <bean class="it.stasbranger.crowlerws.ws.bo.SearchValidatorBO"/>
+        </property>
+        <property name="formView" value="search"/>
+        <property name="successView" value="listaClienti.html"/>
+        <property name="clientiBO" ref="clientiBO"/>
+        <property name="ricercaBO" ref="ricercaBO"/>
+    </bean>
+
+</beans>

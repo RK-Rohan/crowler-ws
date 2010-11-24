@@ -1,0 +1,674 @@
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: it.stasbranger.crowlerws.ws.domain.Ricerca
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from spiderdb.ricerca where id =?
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select ricerca_.id, ricerca_.cosa as cosa1_, ricerca_.data as data1_, ricerca_.dove as dove1_ from spiderdb.ricerca ricerca_ where ricerca_.id=?
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into spiderdb.ricerca (cosa, data, dove, id) values (?, ?, ?, ?)
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update spiderdb.ricerca set cosa=?, data=?, dove=? where id=?
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from spiderdb.ricerca where id=?
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into spiderdb.ricerca (cosa, data, dove) values (?, ?, ?)
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: it.stasbranger.crowlerws.ws.domain.Clienti
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from spiderdb.clienti where id =?
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select clienti_.id, clienti_.cap as cap0_, clienti_.categoria as categoria0_, clienti_.citta as citta0_, clienti_.email as email0_, clienti_.fax as fax0_, clienti_.id_ricerca as id7_0_, clienti_.indirizzo as indirizzo0_, clienti_.note as note0_, clienti_.numero_inviati as numero10_0_, clienti_.provincia as provincia0_, clienti_.ragione_sociale as ragione12_0_, clienti_.telefono as telefono0_ from spiderdb.clienti clienti_ where clienti_.id=?
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into spiderdb.clienti (cap, categoria, citta, email, fax, id_ricerca, indirizzo, note, numero_inviati, provincia, ragione_sociale, telefono, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update spiderdb.clienti set cap=?, categoria=?, citta=?, email=?, fax=?, id_ricerca=?, indirizzo=?, note=?, numero_inviati=?, provincia=?, ragione_sociale=?, telefono=? where id=?
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from spiderdb.clienti where id=?
+ DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into spiderdb.clienti (cap, categoria, citta, email, fax, id_ricerca, indirizzo, note, numero_inviati, provincia, ragione_sociale, telefono) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Ricerca: select ricerca0_.id as id1_0_, ricerca0_.cosa as cosa1_0_, ricerca0_.data as data1_0_, ricerca0_.dove as dove1_0_ from spiderdb.ricerca ricerca0_ where ricerca0_.id=?
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Ricerca: select ricerca0_.id as id1_0_, ricerca0_.cosa as cosa1_0_, ricerca0_.data as data1_0_, ricerca0_.dove as dove1_0_ from spiderdb.ricerca ricerca0_ where ricerca0_.id=?
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Ricerca: select ricerca0_.id as id1_0_, ricerca0_.cosa as cosa1_0_, ricerca0_.data as data1_0_, ricerca0_.dove as dove1_0_ from spiderdb.ricerca ricerca0_ where ricerca0_.id=? for update
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Ricerca: select ricerca0_.id as id1_0_, ricerca0_.cosa as cosa1_0_, ricerca0_.data as data1_0_, ricerca0_.dove as dove1_0_ from spiderdb.ricerca ricerca0_ where ricerca0_.id=? for update
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Ricerca: select ricerca0_.id as id1_0_, ricerca0_.cosa as cosa1_0_, ricerca0_.data as data1_0_, ricerca0_.dove as dove1_0_ from spiderdb.ricerca ricerca0_ where ricerca0_.id=? for update
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity it.stasbranger.crowlerws.ws.domain.Ricerca: select ricerca0_.id as id1_0_, ricerca0_.cosa as cosa1_0_, ricerca0_.data as data1_0_, ricerca0_.dove as dove1_0_ from spiderdb.ricerca ricerca0_ where ricerca0_.id=?
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity it.stasbranger.crowlerws.ws.domain.Ricerca: select ricerca0_.id as id1_0_, ricerca0_.cosa as cosa1_0_, ricerca0_.data as data1_0_, ricerca0_.dove as dove1_0_ from spiderdb.ricerca ricerca0_ where ricerca0_.id=?
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Clienti: select clienti0_.id as id0_0_, clienti0_.cap as cap0_0_, clienti0_.categoria as categoria0_0_, clienti0_.citta as citta0_0_, clienti0_.email as email0_0_, clienti0_.fax as fax0_0_, clienti0_.id_ricerca as id7_0_0_, clienti0_.indirizzo as indirizzo0_0_, clienti0_.note as note0_0_, clienti0_.numero_inviati as numero10_0_0_, clienti0_.provincia as provincia0_0_, clienti0_.ragione_sociale as ragione12_0_0_, clienti0_.telefono as telefono0_0_ from spiderdb.clienti clienti0_ where clienti0_.id=?
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Clienti: select clienti0_.id as id0_0_, clienti0_.cap as cap0_0_, clienti0_.categoria as categoria0_0_, clienti0_.citta as citta0_0_, clienti0_.email as email0_0_, clienti0_.fax as fax0_0_, clienti0_.id_ricerca as id7_0_0_, clienti0_.indirizzo as indirizzo0_0_, clienti0_.note as note0_0_, clienti0_.numero_inviati as numero10_0_0_, clienti0_.provincia as provincia0_0_, clienti0_.ragione_sociale as ragione12_0_0_, clienti0_.telefono as telefono0_0_ from spiderdb.clienti clienti0_ where clienti0_.id=?
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Clienti: select clienti0_.id as id0_0_, clienti0_.cap as cap0_0_, clienti0_.categoria as categoria0_0_, clienti0_.citta as citta0_0_, clienti0_.email as email0_0_, clienti0_.fax as fax0_0_, clienti0_.id_ricerca as id7_0_0_, clienti0_.indirizzo as indirizzo0_0_, clienti0_.note as note0_0_, clienti0_.numero_inviati as numero10_0_0_, clienti0_.provincia as provincia0_0_, clienti0_.ragione_sociale as ragione12_0_0_, clienti0_.telefono as telefono0_0_ from spiderdb.clienti clienti0_ where clienti0_.id=? for update
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Clienti: select clienti0_.id as id0_0_, clienti0_.cap as cap0_0_, clienti0_.categoria as categoria0_0_, clienti0_.citta as citta0_0_, clienti0_.email as email0_0_, clienti0_.fax as fax0_0_, clienti0_.id_ricerca as id7_0_0_, clienti0_.indirizzo as indirizzo0_0_, clienti0_.note as note0_0_, clienti0_.numero_inviati as numero10_0_0_, clienti0_.provincia as provincia0_0_, clienti0_.ragione_sociale as ragione12_0_0_, clienti0_.telefono as telefono0_0_ from spiderdb.clienti clienti0_ where clienti0_.id=? for update
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity it.stasbranger.crowlerws.ws.domain.Clienti: select clienti0_.id as id0_0_, clienti0_.cap as cap0_0_, clienti0_.categoria as categoria0_0_, clienti0_.citta as citta0_0_, clienti0_.email as email0_0_, clienti0_.fax as fax0_0_, clienti0_.id_ricerca as id7_0_0_, clienti0_.indirizzo as indirizzo0_0_, clienti0_.note as note0_0_, clienti0_.numero_inviati as numero10_0_0_, clienti0_.provincia as provincia0_0_, clienti0_.ragione_sociale as ragione12_0_0_, clienti0_.telefono as telefono0_0_ from spiderdb.clienti clienti0_ where clienti0_.id=? for update
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity it.stasbranger.crowlerws.ws.domain.Clienti: select clienti0_.id as id0_0_, clienti0_.cap as cap0_0_, clienti0_.categoria as categoria0_0_, clienti0_.citta as citta0_0_, clienti0_.email as email0_0_, clienti0_.fax as fax0_0_, clienti0_.id_ricerca as id7_0_0_, clienti0_.indirizzo as indirizzo0_0_, clienti0_.note as note0_0_, clienti0_.numero_inviati as numero10_0_0_, clienti0_.provincia as provincia0_0_, clienti0_.ragione_sociale as ragione12_0_0_, clienti0_.telefono as telefono0_0_ from spiderdb.clienti clienti0_ where clienti0_.id=?
+ DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity it.stasbranger.crowlerws.ws.domain.Clienti: select clienti0_.id as id0_0_, clienti0_.cap as cap0_0_, clienti0_.categoria as categoria0_0_, clienti0_.citta as citta0_0_, clienti0_.email as email0_0_, clienti0_.fax as fax0_0_, clienti0_.id_ricerca as id7_0_0_, clienti0_.indirizzo as indirizzo0_0_, clienti0_.note as note0_0_, clienti0_.numero_inviati as numero10_0_0_, clienti0_.provincia as provincia0_0_, clienti0_.ragione_sociale as ragione12_0_0_, clienti0_.telefono as telefono0_0_ from spiderdb.clienti clienti0_ where clienti0_.id=?
+ DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+ DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - registered: 402882812b5e64ff012b5e6500b80000 (unnamed)
+ INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+ DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiated session factory
+ INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+ INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - fetching database metadata
+ INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - updating schema
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Execute first pass mapping processing
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process hbm files
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process annotated classes
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - processing fk mappings (*ToOne and JoinedSubclass)
+ DEBUG main org.hibernate.cfg.Configuration - processing extends queue
+ DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
+ DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
+ DEBUG main org.hibernate.cfg.Configuration - processing association property references
+ DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
+ DEBUG main org.hibernate.validator.ClassValidator - ResourceBundle ValidatorMessages not found in Validator classloader. Delegate to org.hibernate.validator.resources.DefaultValidatorMessages
+ DEBUG main org.hibernate.validator.ClassValidator - ResourceBundle ValidatorMessages not found in Validator classloader. Delegate to org.hibernate.validator.resources.DefaultValidatorMessages
+ INFO main org.hibernate.tool.hbm2ddl.TableMetadata - table found: spiderdb.clienti
+ INFO main org.hibernate.tool.hbm2ddl.TableMetadata - columns: [id_ricerca, cap, provincia, numero_inviati, indirizzo, note, fax, id, ragione_sociale, categoria, email, citta, telefono]
+ INFO main org.hibernate.tool.hbm2ddl.TableMetadata - foreign keys: []
+ INFO main org.hibernate.tool.hbm2ddl.TableMetadata - indexes: [primary, id_ricerca, ragione_sociale, email]
+ INFO main org.hibernate.tool.hbm2ddl.TableMetadata - table found: spiderdb.ricerca
+ INFO main org.hibernate.tool.hbm2ddl.TableMetadata - columns: [dove, cosa, data, id]
+ INFO main org.hibernate.tool.hbm2ddl.TableMetadata - foreign keys: []
+ INFO main org.hibernate.tool.hbm2ddl.TableMetadata - indexes: [primary]
+ INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - schema update complete
+ DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 2 named HQL queries
+ DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking named query: clienteDuplicato
+ DEBUG main org.hibernate.hql.ast.QueryTranslatorImpl - parse() - HQL: SELECT c FROM it.stasbranger.crowlerws.ws.domain.Clienti c WHERE c.email = ?1 AND c.provincia = ?2
+ DEBUG main org.hibernate.hql.ast.AST - --- HQL AST ---
+ \-[QUERY] 'query'
+    +-[SELECT_FROM] 'SELECT_FROM'
+    |  +-[FROM] 'FROM'
+    |  |  \-[RANGE] 'RANGE'
+    |  |     +-[DOT] '.'
+    |  |     |  +-[DOT] '.'
+    |  |     |  |  +-[DOT] '.'
+    |  |     |  |  |  +-[DOT] '.'
+    |  |     |  |  |  |  +-[DOT] '.'
+    |  |     |  |  |  |  |  +-[IDENT] 'it'
+    |  |     |  |  |  |  |  \-[IDENT] 'stasbranger'
+    |  |     |  |  |  |  \-[IDENT] 'crowlerws'
+    |  |     |  |  |  \-[IDENT] 'ws'
+    |  |     |  |  \-[IDENT] 'domain'
+    |  |     |  \-[IDENT] 'Clienti'
+    |  |     \-[ALIAS] 'c'
+    |  \-[SELECT] 'SELECT'
+    |     \-[IDENT] 'c'
+    \-[WHERE] 'WHERE'
+       \-[AND] 'AND'
+          +-[EQ] '='
+          |  +-[DOT] '.'
+          |  |  +-[IDENT] 'c'
+          |  |  \-[IDENT] 'email'
+          |  \-[PARAM] '?'
+          |     \-[NUM_INT] '1'
+          \-[EQ] '='
+             +-[DOT] '.'
+             |  +-[IDENT] 'c'
+             |  \-[IDENT] 'provincia'
+             \-[PARAM] '?'
+                \-[NUM_INT] '2'
+
+ DEBUG main org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+ DEBUG main org.hibernate.hql.ast.tree.FromElement - FromClause{level=1} :  it.stasbranger.crowlerws.ws.domain.Clienti (c) -> clienti0_
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  c -> clienti0_.id
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  c -> clienti0_.id
+ DEBUG main org.hibernate.hql.ast.tree.DotNode - getDataType() : email -> org.hibernate.type.StringType@f8963c
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  c.email -> clienti0_.email
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  c -> clienti0_.id
+ DEBUG main org.hibernate.hql.ast.tree.DotNode - getDataType() : provincia -> org.hibernate.type.StringType@f8963c
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  c.provincia -> clienti0_.provincia
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+ DEBUG main org.hibernate.hql.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} clienti0_.id ) ( FromClause{level=1} spiderdb.clienti clienti0_ ) ( WHERE ( AND ( = ( clienti0_.email clienti0_.id email ) ? ) ( = ( clienti0_.provincia clienti0_.id provincia ) ? ) ) ) )
+ DEBUG main org.hibernate.hql.ast.util.JoinProcessor - Using FROM fragment [spiderdb.clienti clienti0_]
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+ DEBUG main org.hibernate.hql.ast.AST - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (spiderdb.clienti)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'clienti0_.id as id0_'
+    |  \-[SQL_TOKEN] SqlFragment: 'clienti0_.cap as cap0_, clienti0_.categoria as categoria0_, clienti0_.citta as citta0_, clienti0_.email as email0_, clienti0_.fax as fax0_, clienti0_.id_ricerca as id7_0_, clienti0_.indirizzo as indirizzo0_, clienti0_.note as note0_, clienti0_.numero_inviati as numero10_0_, clienti0_.provincia as provincia0_, clienti0_.ragione_sociale as ragione12_0_, clienti0_.telefono as telefono0_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[c], fromElementByTableAlias=[clienti0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'spiderdb.clienti clienti0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=c,role=null,tableName=spiderdb.clienti,tableAlias=clienti0_,origin=null,colums={,className=it.stasbranger.crowlerws.ws.domain.Clienti}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[AND] SqlNode: 'AND'
+          +-[EQ] BinaryLogicOperatorNode: '='
+          |  +-[DOT] DotNode: 'clienti0_.email'
+          |  |  +-[ALIAS_REF] IdentNode: 'clienti0_.id'
+          |  |  \-[IDENT] IdentNode: 'email'
+          |  \-[NAMED_PARAM] ParameterNode: '?' {name=1, expectedType=org.hibernate.type.StringType@f8963c}
+          \-[EQ] BinaryLogicOperatorNode: '='
+             +-[DOT] DotNode: 'clienti0_.provincia'
+             |  +-[ALIAS_REF] IdentNode: 'clienti0_.id'
+             |  \-[IDENT] IdentNode: 'provincia'
+             \-[NAMED_PARAM] ParameterNode: '?' {name=2, expectedType=org.hibernate.type.StringType@f8963c}
+
+ DEBUG main org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
+ DEBUG main org.hibernate.hql.ast.QueryTranslatorImpl - HQL: SELECT c FROM it.stasbranger.crowlerws.ws.domain.Clienti c WHERE c.email = ?1 AND c.provincia = ?2
+ DEBUG main org.hibernate.hql.ast.QueryTranslatorImpl - SQL: select clienti0_.id as id0_, clienti0_.cap as cap0_, clienti0_.categoria as categoria0_, clienti0_.citta as citta0_, clienti0_.email as email0_, clienti0_.fax as fax0_, clienti0_.id_ricerca as id7_0_, clienti0_.indirizzo as indirizzo0_, clienti0_.note as note0_, clienti0_.numero_inviati as numero10_0_, clienti0_.provincia as provincia0_, clienti0_.ragione_sociale as ragione12_0_, clienti0_.telefono as telefono0_ from spiderdb.clienti clienti0_ where clienti0_.email=? and clienti0_.provincia=?
+ DEBUG main org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
+ DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking named query: lastRicerca
+ DEBUG main org.hibernate.hql.ast.QueryTranslatorImpl - parse() - HQL: SELECT r FROM it.stasbranger.crowlerws.ws.domain.Ricerca r WHERE r.id IN (SELECT MAX(rr.id) FROM it.stasbranger.crowlerws.ws.domain.Ricerca rr)
+ DEBUG main org.hibernate.hql.ast.AST - --- HQL AST ---
+ \-[QUERY] 'query'
+    +-[SELECT_FROM] 'SELECT_FROM'
+    |  +-[FROM] 'FROM'
+    |  |  \-[RANGE] 'RANGE'
+    |  |     +-[DOT] '.'
+    |  |     |  +-[DOT] '.'
+    |  |     |  |  +-[DOT] '.'
+    |  |     |  |  |  +-[DOT] '.'
+    |  |     |  |  |  |  +-[DOT] '.'
+    |  |     |  |  |  |  |  +-[IDENT] 'it'
+    |  |     |  |  |  |  |  \-[IDENT] 'stasbranger'
+    |  |     |  |  |  |  \-[IDENT] 'crowlerws'
+    |  |     |  |  |  \-[IDENT] 'ws'
+    |  |     |  |  \-[IDENT] 'domain'
+    |  |     |  \-[IDENT] 'Ricerca'
+    |  |     \-[ALIAS] 'r'
+    |  \-[SELECT] 'SELECT'
+    |     \-[IDENT] 'r'
+    \-[WHERE] 'WHERE'
+       \-[IN] 'in'
+          +-[DOT] '.'
+          |  +-[IDENT] 'r'
+          |  \-[IDENT] 'id'
+          \-[IN_LIST] 'inList'
+             \-[QUERY] 'query'
+                \-[SELECT_FROM] 'SELECT_FROM'
+                   +-[FROM] 'FROM'
+                   |  \-[RANGE] 'RANGE'
+                   |     +-[DOT] '.'
+                   |     |  +-[DOT] '.'
+                   |     |  |  +-[DOT] '.'
+                   |     |  |  |  +-[DOT] '.'
+                   |     |  |  |  |  +-[DOT] '.'
+                   |     |  |  |  |  |  +-[IDENT] 'it'
+                   |     |  |  |  |  |  \-[IDENT] 'stasbranger'
+                   |     |  |  |  |  \-[IDENT] 'crowlerws'
+                   |     |  |  |  \-[IDENT] 'ws'
+                   |     |  |  \-[IDENT] 'domain'
+                   |     |  \-[IDENT] 'Ricerca'
+                   |     \-[ALIAS] 'rr'
+                   \-[SELECT] 'SELECT'
+                      \-[AGGREGATE] 'MAX'
+                         \-[DOT] '.'
+                            +-[IDENT] 'rr'
+                            \-[IDENT] 'id'
+
+ DEBUG main org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+ DEBUG main org.hibernate.hql.ast.tree.FromElement - FromClause{level=1} :  it.stasbranger.crowlerws.ws.domain.Ricerca (r) -> ricerca0_
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  r -> ricerca0_.id
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  r -> ricerca0_.id
+ DEBUG main org.hibernate.hql.ast.tree.DotNode - getDataType() : id -> org.hibernate.type.IntegerType@10dd87
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  r.id -> ricerca0_.id
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select << begin [level=2, statement=select]
+ DEBUG main org.hibernate.hql.ast.tree.FromElement - FromClause{level=2} :  it.stasbranger.crowlerws.ws.domain.Ricerca (rr) -> ricerca1_
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  rr -> ricerca1_.id
+ DEBUG main org.hibernate.hql.ast.tree.DotNode - getDataType() : id -> org.hibernate.type.IntegerType@10dd87
+ DEBUG main org.hibernate.hql.ast.tree.FromReferenceNode - Resolved :  rr.id -> ricerca1_.id
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select : finishing up [level=2, statement=select]
+ DEBUG main org.hibernate.hql.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} ( MAX ( ricerca1_.id ricerca1_.id id ) ) ) ( FromClause{level=2} spiderdb.ricerca ricerca1_ ) )
+ DEBUG main org.hibernate.hql.ast.util.JoinProcessor - Using FROM fragment [spiderdb.ricerca ricerca1_]
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select >> end [level=2, statement=select]
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+ DEBUG main org.hibernate.hql.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} ricerca0_.id ) ( FromClause{level=1} spiderdb.ricerca ricerca0_ ) ( WHERE ( in ( ricerca0_.id ricerca0_.id id ) ( inList ( SELECT ( {select clause} ( MAX ( ricerca1_.id ricerca1_.id id ) ) ) ( FromClause{level=2} spiderdb.ricerca ricerca1_ ) ) ) ) ) )
+ DEBUG main org.hibernate.hql.ast.util.JoinProcessor - Using FROM fragment [spiderdb.ricerca ricerca0_]
+ DEBUG main org.hibernate.hql.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+ DEBUG main org.hibernate.hql.ast.AST - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (spiderdb.ricerca)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'ricerca0_.id as id1_'
+    |  \-[SQL_TOKEN] SqlFragment: 'ricerca0_.cosa as cosa1_, ricerca0_.data as data1_, ricerca0_.dove as dove1_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[r], fromElementByTableAlias=[ricerca0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'spiderdb.ricerca ricerca0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=r,role=null,tableName=spiderdb.ricerca,tableAlias=ricerca0_,origin=null,colums={,className=it.stasbranger.crowlerws.ws.domain.Ricerca}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[IN] InLogicOperatorNode: 'in'
+          +-[DOT] DotNode: 'ricerca0_.id'
+          |  +-[ALIAS_REF] IdentNode: 'ricerca0_.id'
+          |  \-[IDENT] IdentNode: 'id'
+          \-[IN_LIST] SqlNode: 'inList'
+             \-[SELECT] QueryNode: 'SELECT'  querySpaces (spiderdb.ricerca)
+                +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+                |  \-[AGGREGATE] AggregateNode: 'MAX'
+                |     \-[DOT] DotNode: 'ricerca1_.id'
+                |        +-[ALIAS_REF] IdentNode: 'ricerca1_.id'
+                |        \-[IDENT] IdentNode: 'id'
+                \-[FROM] FromClause: 'FROM' FromClause{level=2, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[rr], fromElementByTableAlias=[ricerca1_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+                   \-[FROM_FRAGMENT] FromElement: 'spiderdb.ricerca ricerca1_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=rr,role=null,tableName=spiderdb.ricerca,tableAlias=ricerca1_,origin=null,colums={,className=it.stasbranger.crowlerws.ws.domain.Ricerca}}
+
+ DEBUG main org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
+ DEBUG main org.hibernate.hql.ast.QueryTranslatorImpl - HQL: SELECT r FROM it.stasbranger.crowlerws.ws.domain.Ricerca r WHERE r.id IN (SELECT MAX(rr.id) FROM it.stasbranger.crowlerws.ws.domain.Ricerca rr)
+ DEBUG main org.hibernate.hql.ast.QueryTranslatorImpl - SQL: select ricerca0_.id as id1_, ricerca0_.cosa as cosa1_, ricerca0_.data as data1_, ricerca0_.dove as dove1_ from spiderdb.ricerca ricerca0_ where ricerca0_.id in (select MAX(ricerca1_.id) from spiderdb.ricerca ricerca1_)
+ DEBUG main org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
+ DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named SQL queries
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'entityManagerFactory'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManager'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionManager'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionManager'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'ClientiDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'ClientiDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'ClientiDAO' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'ClientiDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+ DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'ClientiDAO' with 0 common interceptors and 1 specific interceptors
+ DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [it.stasbranger.crowlerws.ws.dao.ClientiDAO@3ffd14]
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'ClientiDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'RicercaDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'RicercaDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'RicercaDAO' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'RicercaDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+ DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'RicercaDAO' with 0 common interceptors and 1 specific interceptors
+ DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [it.stasbranger.crowlerws.ws.dao.RicercaDAO@ff4999]
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'RicercaDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'RicercaBO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'RicercaBO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'RicercaBO' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'RicercaDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'findRicercaById' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+ DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'RicercaBO' with 0 common interceptors and 1 specific interceptors
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Creating CGLIB2 proxy: target source is SingletonTargetSource for target object [it.stasbranger.crowlerws.ws.bo.RicercaBO@26a0ba]
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public it.stasbranger.crowlerws.ws.domain.Ricerca it.stasbranger.crowlerws.ws.bo.RicercaBO.findRicercaById(it.stasbranger.crowlerws.ws.domain.Ricerca)
+ DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'findLastRicerca' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public it.stasbranger.crowlerws.ws.domain.Ricerca it.stasbranger.crowlerws.ws.bo.RicercaBO.findLastRicerca(it.stasbranger.crowlerws.ws.domain.Ricerca)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void it.stasbranger.crowlerws.ws.bo.RicercaBO.setRicercaDAO(it.stasbranger.crowlerws.ws.dao.IRicercaDAO)
+ DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'saveRicerca' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void it.stasbranger.crowlerws.ws.bo.RicercaBO.saveRicerca(it.stasbranger.crowlerws.ws.domain.Ricerca)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found finalize() method - using NO_OVERRIDE
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'RicercaBO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'ClientiBO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'ClientiBO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'ClientiBO' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'ClientiDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+ DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'saveClienti' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+ DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'ClientiBO' with 0 common interceptors and 1 specific interceptors
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Creating CGLIB2 proxy: target source is SingletonTargetSource for target object [it.stasbranger.crowlerws.ws.bo.ClientiBO@6ab811]
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void it.stasbranger.crowlerws.ws.bo.ClientiBO.saveClienti(it.stasbranger.crowlerws.ws.domain.Clienti)
+ DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'findClienti' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public it.stasbranger.crowlerws.ws.domain.Clienti it.stasbranger.crowlerws.ws.bo.ClientiBO.findClienti(it.stasbranger.crowlerws.ws.domain.Clienti)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void it.stasbranger.crowlerws.ws.bo.ClientiBO.setClientiDAO(it.stasbranger.crowlerws.ws.dao.IClientiDAO)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found finalize() method - using NO_OVERRIDE
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+ DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'ClientiBO'
+ DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@ebd60d]
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'ClientiDAO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'ClientiBO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'RicercaBO'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [it.stasbranger.crowlerws.ws.bo.RicercaBO.findRicercaById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@c6af24] for JPA transaction
+ DEBUG main org.hibernate.impl.SessionImpl - opened session at timestamp: 12857788998
+ DEBUG main org.hibernate.transaction.JDBCTransaction - begin
+ DEBUG main org.hibernate.jdbc.ConnectionManager - opening JDBC connection
+ DEBUG main org.hibernate.transaction.JDBCTransaction - current autocommit status: true
+ DEBUG main org.hibernate.transaction.JDBCTransaction - disabling autocommit
+ INFO main it.stasbranger.crowlerws.ws.dao.RicercaDAO - finding Ricerca instance with id: 1
+ DEBUG main org.hibernate.loader.Loader - loading entity: [it.stasbranger.crowlerws.ws.domain.Ricerca#1]
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+ DEBUG main org.hibernate.SQL - select ricerca0_.id as id1_0_, ricerca0_.cosa as cosa1_0_, ricerca0_.data as data1_0_, ricerca0_.dove as dove1_0_ from spiderdb.ricerca ricerca0_ where ricerca0_.id=?
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+ DEBUG main org.hibernate.loader.Loader - result row: EntityKey[it.stasbranger.crowlerws.ws.domain.Ricerca#1]
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+ DEBUG main org.hibernate.engine.TwoPhaseLoad - resolving associations for [it.stasbranger.crowlerws.ws.domain.Ricerca#1]
+ DEBUG main org.hibernate.engine.TwoPhaseLoad - done materializing entity [it.stasbranger.crowlerws.ws.domain.Ricerca#1]
+ DEBUG main org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
+ DEBUG main org.hibernate.loader.Loader - done entity load
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@c6af24]
+ DEBUG main org.hibernate.transaction.JDBCTransaction - commit
+ DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+ DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+ DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+ DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+ DEBUG main org.hibernate.pretty.Printer - listing entities:
+ DEBUG main org.hibernate.pretty.Printer - it.stasbranger.crowlerws.ws.domain.Ricerca{dove=piemonte, cosa=imbianchini, data=2010-09-29 11:07:55, id=1}
+ DEBUG main org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
+ DEBUG main org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
+ DEBUG main org.hibernate.jdbc.ConnectionManager - aggressively releasing JDBC connection
+ DEBUG main org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@c6af24] after transaction
+ DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [null]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@262531] for JPA transaction
+ DEBUG main org.hibernate.impl.SessionImpl - opened session at timestamp: 12857789000
+ DEBUG main org.hibernate.transaction.JDBCTransaction - begin
+ DEBUG main org.hibernate.jdbc.ConnectionManager - opening JDBC connection
+ DEBUG main org.hibernate.transaction.JDBCTransaction - current autocommit status: true
+ DEBUG main org.hibernate.transaction.JDBCTransaction - disabling autocommit
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@262531] for JPA transaction
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+ DEBUG main org.hibernate.SQL - select clienti0_.id as id0_, clienti0_.cap as cap0_, clienti0_.categoria as categoria0_, clienti0_.citta as citta0_, clienti0_.email as email0_, clienti0_.fax as fax0_, clienti0_.id_ricerca as id7_0_, clienti0_.indirizzo as indirizzo0_, clienti0_.note as note0_, clienti0_.numero_inviati as numero10_0_, clienti0_.provincia as provincia0_, clienti0_.ragione_sociale as ragione12_0_, clienti0_.telefono as telefono0_ from spiderdb.clienti clienti0_ where clienti0_.email=? and clienti0_.provincia=?
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+ DEBUG main org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@262531] for JPA transaction
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+ INFO main it.stasbranger.crowlerws.ws.dao.ClientiDAO - saving Clienti instance
+ DEBUG main org.hibernate.event.def.AbstractSaveEventListener - executing identity-insert immediately
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+ DEBUG main org.hibernate.SQL - insert into spiderdb.clienti (cap, categoria, citta, email, fax, id_ricerca, indirizzo, note, numero_inviati, provincia, ragione_sociale, telefono) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+ DEBUG main org.hibernate.id.IdentifierGeneratorFactory - Natively generated identity: 2
+ DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+ INFO main it.stasbranger.crowlerws.ws.dao.ClientiDAO - save successful
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@262531]
+ DEBUG main org.hibernate.transaction.JDBCTransaction - commit
+ DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+ DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+ DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+ DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+ DEBUG main org.hibernate.pretty.Printer - listing entities:
+ DEBUG main org.hibernate.pretty.Printer - it.stasbranger.crowlerws.ws.domain.Clienti{cap=70031, provincia=BT, indirizzo=via Settembrini, 23, idRicerca=1, note=bla bla bla, fax=0883380207, id=2, categoria=software house, numeroInviati=0, email=info@stasbranger.com, ragioneSociale=Puglia, citta=Andria, telefono=0883380207}
+ DEBUG main org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
+ DEBUG main org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
+ DEBUG main org.hibernate.jdbc.ConnectionManager - aggressively releasing JDBC connection
+ DEBUG main org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+ DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@262531] after transaction
+ DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+ INFO main org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3f16b4: startup date [Wed Sep 29 19:02:45 CEST 2010]; root of context hierarchy
+ INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+ DEBUG main org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+ DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
+ DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd=org/springframework/webflow/config/spring-webflow-config-2.0.xsd, http://www.springframework.org/schema/webflow-config/spring-webflow-config-1.0.xsd=org/springframework/webflow/config/spring-webflow-config-1.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-3.0.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/security/spring-security-2.0.2.xsd=org/springframework/security/config/spring-security-2.0.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/security/spring-security-2.0.1.xsd=org/springframework/security/config/spring-security-2.0.1.xsd, http://www.springframework.org/schema/faces/spring-faces-2.0.xsd=org/springframework/faces/config/spring-faces-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/security/spring-security-2.0.xsd=org/springframework/security/config/spring-security-2.0.xsd, http://www.springframework.org/schema/security/spring-security-3.0.xsd=org/springframework/security/config/spring-security-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/security/spring-security-2.0.4.xsd=org/springframework/security/config/spring-security-2.0.4.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/security/spring-security.xsd=org/springframework/security/config/spring-security-3.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+ DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+ DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tx/spring-tx.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.0.xsd
+ DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+ DEBUG main org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+ DEBUG main org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/webflow-config=org.springframework.webflow.config.WebFlowConfigNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/security=org.springframework.security.config.SecurityNamespaceHandler, http://www.springframework.org/schema/faces=org.springframework.faces.config.FacesNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/jms=org.springframework.jms.config.JmsNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+ DEBUG main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 10 bean definitions from location pattern [/applicationContext.xml]
+ DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@3f16b4: org.springframework.beans.factory.support.DefaultListableBeanFactory@9ff588: defining beans [entityManagerFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ClientiDAO,RicercaDAO,RicercaBO,ClientiBO]; root of factory hierarchy
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+ DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@6bde8]
+ DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@bc3c9]
+ INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9ff588: defining beans [entityManagerFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ClientiDAO,RicercaDAO,RicercaBO,ClientiBO]; root of factory hierarchy
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'entityManagerFactory'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'entityManagerFactory'
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'entityManagerFactory' to allow for resolving potential circular references
+ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'entityManagerFactory'
+ INFO main org.springframework.orm.jpa.LocalEntityManagerFactoryBean - Building JPA EntityManagerFactory for persistence unit 'CrowlerWSPU'
+ INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.4.0.GA
+ INFO main org.hibernate.cfg.Environment - Hibernate 3.3.2.GA
+ INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+ INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+ INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+ INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.1.0.GA
+ INFO main org.hibernate.ejb.Version - Hibernate EntityManager 3.4.0.GA
+ DEBUG main org.hibernate.ejb.Ejb3Configuration - Look up for persistence unit: CrowlerWSPU
+ DEBUG main org.hibernate.util.DTDEntityResolver - trying to resolve system-id [http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd]
+ DEBUG main org.hibernate.cfg.EJB3DTDEntityResolver - recognized EJB3 ORM namespace; attempting to resolve on classpath under org/hibernate/ejb
+ DEBUG main org.hibernate.cfg.EJB3DTDEntityResolver - located [http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd] in classpath
+ DEBUG main org.hibernate.ejb.Ejb3Configuration - Detect class: true; detect hbm: true
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Searching mapped entities in jar/par: file:/Users/flaviotroia/Workspaces/MyEclipse%20for%20Spring%208.5/CrowlerWS/WebRoot/WEB-INF/classes
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.bo.ClientiBO
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.bo.RicercaBO
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.bo.SearchBO
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.bo.SearchValidatorBO
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.bo.test.ClientiBOTest
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.bo.test.RicercaBOTest
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.dao.ClientiDAO$1
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.dao.ClientiDAO$2
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.dao.ClientiDAO
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.dao.IClientiDAO
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.dao.IRicercaDAO
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.dao.RicercaDAO$1
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.dao.RicercaDAO$2
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.dao.RicercaDAO
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.domain.Clienti
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Java element filter matched for it.stasbranger.crowlerws.ws.domain.Clienti
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.domain.Ricerca
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Java element filter matched for it.stasbranger.crowlerws.ws.domain.Ricerca
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.mvc.ListaClientiController
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.mvc.SearchController
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.mvc.SearchModel
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.utility.GetParameters
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.utility.RegexHTML
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.utility.SpiderYP
+ DEBUG main org.hibernate.ejb.packaging.AbstractJarVisitor - Filtering: it.stasbranger.crowlerws.ws.utility.URLConnectionReader
+ DEBUG main org.hibernate.ejb.Ejb3Configuration - Detect class: true; detect hbm: true
+ DEBUG main org.hibernate.ejb.Ejb3Configuration - Creating Factory: CrowlerWSPU
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Execute first pass mapping processing
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process hbm files
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process annotated classes
+ INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: it.stasbranger.crowlerws.ws.domain.Clienti
+ INFO main org.hibernate.cfg.annotations.QueryBinder - Binding Named query: clienteDuplicato => SELECT c FROM Clienti c WHERE c.email = ?1 AND c.provincia = ?2
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column DTYPE. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.EntityBinder - Import with entity name Clienti
+ INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity it.stasbranger.crowlerws.ws.domain.Clienti on table clienti
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing it.stasbranger.crowlerws.ws.domain.Clienti property annotation
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.id
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column id. Unique true. Nullable false.
+ DEBUG main org.hibernate.cfg.AnnotationBinder - id is an id
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property id
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.cap
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column cap. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property cap with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for cap
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property cap
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.categoria
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column categoria. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property categoria with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for categoria
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property categoria
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.citta
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column citta. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property citta with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for citta
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property citta
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.email
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column email. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property email with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for email
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property email
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.fax
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column fax. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property fax with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for fax
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property fax
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.idRicerca
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column id_ricerca. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property idRicerca with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for idRicerca
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property idRicerca
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.indirizzo
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column indirizzo. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property indirizzo with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for indirizzo
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property indirizzo
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.note
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column note. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property note with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for note
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property note
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.numeroInviati
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column numero_inviati. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property numeroInviati with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for numeroInviati
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property numeroInviati
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.provincia
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column provincia. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property provincia with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for provincia
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property provincia
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.ragioneSociale
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column ragione_sociale. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property ragioneSociale with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for ragioneSociale
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property ragioneSociale
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Clienti.telefono
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column telefono. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property telefono with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for telefono
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property telefono
+ INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: it.stasbranger.crowlerws.ws.domain.Ricerca
+ INFO main org.hibernate.cfg.annotations.QueryBinder - Binding Named query: lastRicerca => SELECT r FROM Ricerca r WHERE r.id IN (SELECT MAX(rr.id) FROM Ricerca rr)
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column DTYPE. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.EntityBinder - Import with entity name Ricerca
+ INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity it.stasbranger.crowlerws.ws.domain.Ricerca on table ricerca
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing it.stasbranger.crowlerws.ws.domain.Ricerca property annotation
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Ricerca.id
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column id. Unique true. Nullable false.
+ DEBUG main org.hibernate.cfg.AnnotationBinder - id is an id
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property id
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Ricerca.cosa
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column cosa. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property cosa with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for cosa
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property cosa
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Ricerca.data
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column data. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property data with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for data
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property data
+ DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of it.stasbranger.crowlerws.ws.domain.Ricerca.dove
+ DEBUG main org.hibernate.cfg.Ejb3Column - Binding column dove. Unique false. Nullable false.
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property dove with lazy=false
+ DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for dove
+ DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property dove
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - processing fk mappings (*ToOne and JoinedSubclass)
+ DEBUG main org.hibernate.cfg.Configuration - processing extends queue
+ DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
+ DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
+ DEBUG main org.hibernate.cfg.Configuration - processing association property references
+ DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
+ INFO main org.hibernate.validator.Version - Hibernate Validator 3.1.0.GA
+ DEBUG main org.hibernate.validator.ClassValidator - ResourceBundle ValidatorMessages not found in Validator classloader. Delegate to org.hibernate.validator.resources.DefaultValidatorMessages
+ DEBUG main org.hibernate.validator.ClassValidator - ResourceBundle ValidatorMessages not found in Validator classloader. Delegate to org.hibernate.validator.resources.DefaultValidatorMessages
+ DEBUG main org.hibernate.ejb.util.NamingHelper - No JNDI name configured for binding Ejb3Configuration
+ DEBUG main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Search not present in classpath, ignoring event listener registration.
+ INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+ DEBUG main org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Execute first pass mapping processing
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process hbm files
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process annotated classes
+ DEBUG main org.hibernate.cfg.AnnotationConfiguration - processing fk mappings (*ToOne and JoinedSubclass)
+ DEBUG main org.hibernate.cfg.Configuration - processing extends queue
+ DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
+ DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
+ DEBUG main org.hibernate.cfg.Configuration - processing association property references
+ DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
+ DEBUG main org.hibernate.validator.ClassValidator - ResourceBundle ValidatorMessages not found in Validator classloader. Delegate to org.hibernate.validator.resources.DefaultValidatorMessages
+ DEBUG main org.hibernate.validator.ClassValidator - ResourceBundle ValidatorMessages not found in Validator classloader. Delegate to org.hibernate.validator.resources.DefaultValidatorMessages
+ INFO main org.hibernate.connection.DriverManagerConnectionProvider - Using Hibernate built-in connection pool (not for production use!)
+ INFO main org.hibernate.connection.DriverManagerConnectionProvider - Hibernate connection pool size: 20
+ INFO main org.hibernate.connection.DriverManagerConnectionProvider - autocommit mode: true
+ INFO main org.hibernate.connection.DriverManagerConnectionProvider - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/spiderdb
+ INFO main org.hibernate.connection.DriverManagerConnectionProvider - connection properties: {user=root, password=caccola, autocommit=true, release_mode=auto}
+ DEBUG main org.hibernate.connection.DriverManagerConnectionProvider - opening new JDBC connection
+ DEBUG main org.hibernate.connection.DriverManagerConnectionProvider - created connection to: jdbc:mysql://localhost:3306/spiderdb, Isolation Level: 4
+ INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.5.3-m3
+ INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.12 ( Revision: ${bzr.revision-id} )
+ INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQL5Dialect
+ INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+ INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+ INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+ DEBUG main org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+ INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+ INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+ INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+ INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+ INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+ INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: enabled
+ INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+ INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+ INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+ INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+ INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+ DEBUG main org.hibernate.validator.ClassValidator - ResourceBundle ValidatorMessages not found in Validator classloader. Delegate to org.hibernate.validator.resources.DefaultValidatorMessages
+ DEBUG main org.hibernate.validator.ClassValidator - ResourceBundle ValidatorMessages not found in Validator classloader. Delegate to org.hibernate.validator.resources.DefaultValidatorMessages
+ INFO main org.hibernate.impl.SessionFactoryImpl - building session factory
+ DEBUG main org.hibernate.impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+ DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiating session factory with properties: {java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition, hibernate.connection.password=caccola, sun.boot.library.path=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Libraries, java.vm.version=1.5.0_24-149, awt.nativeDoubleBuffering=true, hibernate.connection.username=root, gopherProxySet=false, mrj.build=9M3165, java.vm.vendor=Apple Inc., java.vendor.url=http://www.apple.com/, path.separator=:, java.vm.name=Java HotSpot(TM) Client VM, file.encoding.pkg=sun.io, user.country=IT, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS, java.runtime.version=1.5.0_24-b02-357-9M3165, hibernate.ejb.discard_pc_on_close=false, java.awt.graphicsenv=apple.awt.CGraphicsEnvironment, java.endorsed.dirs=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/endorsed, os.arch=i386, hibernate.connection.autocommit=true, java.io.tmpdir=/var/folders/PM/PMvVExgZH90Q3tgbRRXFQE+++TI/-Tmp-/, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., os.name=Mac OS X, sun.jnu.encoding=MacRoman, java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.specification.name=Java Platform API Specification, java.class.version=49.0, sun.management.compiler=HotSpot Client Compiler, hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory, os.version=10.5.8, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/flaviotroia, user.timezone=Europe/Rome, java.awt.printerjob=apple.awt.CPrinterJob, hibernate.connection.release_mode=auto, java.specification.version=1.5, file.encoding=MacRoman, hibernate.connection.driver_class=com.mysql.jdbc.Driver, user.name=flaviotroia, java.class.path=/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/classes:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/entitymanager/hibernate-annotations.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/entitymanager/hibernate-commons-annotations.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/entitymanager/hibernate-entitymanager.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/hibernate-validator.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/entitymanager/ejb3-persistence.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/bytecode/cglib/cglib-2.2.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/bytecode/javassist/javassist-3.9.0.GA.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.2/lib/antlr-2.7.6.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/required/commons-collections-3.1.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/hibernate3.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/required/jta-1.1.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.2/lib/ehcache-1.2.3.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/required/slf4j-api-1.5.8.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/required/slf4j-log4j12-1.5.8.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.3/lib/required/log4j-1.2.14.jar:/Library/Genuitec/Common/plugins/com.genuitec.org.hibernate.eclipse_3.2.4.CR1-me201003101716/myeclipse-data/3.1/lib/dom4j-1.6.1.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/asm-3.3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/asm-analysis-3.3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/asm-commons-3.3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/asm-tree-3.3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/asm-util-3.3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/asm-xml-3.3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/cas-client-core-3.1.10.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.bsh-2.0.0.b4.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.com.caucho-3.2.1.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.commonj-1.1.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.edu.emory.mathcs.backport-3.0.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.javax.inject-1.0.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.net.sf.cglib-2.2.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.apache.commons.fileupload-1.2.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.apache.commons.httpclient-3.1.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.apache.commons.lang-2.4.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.apache.commons.pool-1.5.3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.apache.log4j-1.2.15.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.apache.taglibs.standard-1.1.2.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.codehaus.groovy-1.6.5.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.codehaus.jackson.mapper-1.0.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.jruby-1.4.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.junit-4.7.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.quartz-1.6.2.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/com.springsource.org.testng-5.10.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/commons-dbcp.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/easymock.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/jamon-2.7.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/jmxremote.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/jmxremote_optional.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/jmxri.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/jotm.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/ldapsdk-4.1.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/log4j-1.2.15.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.12-bin.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/ognl-2.6.9.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.aop-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.asm-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.aspects-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.beans-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.binding-2.0.8.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.config.java-1.0.0.M4.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.context-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.context.support-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.core-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.expression-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.faces-2.0.8.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.instrument-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.instrument.tomcat-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.jdbc-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.jms-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.js-2.0.8.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.orm-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.oxm-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.test-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.transaction-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.web-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.web.portlet-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.web.servlet-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.web.struts-3.0.1.RELEASE-A.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/org.springframework.webflow-2.0.8.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/persistence.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/servlet-api.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-binding-1.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-ldap-core-1.3.0.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-security-acl-3.0.2.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-security-cas-client-3.0.2.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-security-config-3.0.2.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-security-core-3.0.2.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-security-ldap-3.0.2.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-security-openid-3.0.2.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-security-taglibs-3.0.2.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-security-web-3.0.2.RELEASE.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/spring-webflow-1.0.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/wstx-asl-3.2.7.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/xapool.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/xmlunit-1.2.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/antlr-2.7.6.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/aspectjrt.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/ejb3-persistence.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/cglib-nodep-2.1_3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/hibernate-annotations.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/hibernate-commons-annotations.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/hibernate3.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/common-annotations.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/jstl.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/WebRoot/WEB-INF/lib/jta.jar:/Users/flaviotroia/Workspaces/MyEclipse for Spring 8.5/CrowlerWS/log4j:/Library/Genuitec/MyEclipse for Spring 8.5/configuration/org.eclipse.osgi/bundles/650/1/.cp/:/Library/Genuitec/MyEclipse for Spring 8.5/configuration/org.eclipse.osgi/bundles/648/1/.cp/:/Library/Genuitec/MyEclipse for Spring 8.5/configuration/org.eclipse.osgi/bundles/649/1/.cp/, hibernate.bytecode.use_reflection_optimizer=false, hibernate.use_identifier_rollback=false, java.vm.specification.version=1.0, sun.arch.data.model=32, java.home=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home, hibernate.connection.url=jdbc:mysql://localhost:3306/spiderdb, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, java.specification.vendor=Sun Microsystems Inc., user.language=it, awt.toolkit=apple.awt.CToolkit, java.vm.info=mixed mode, sharing, java.version=1.5.0_24, hibernate.transaction.flush_before_completion=false, java.ext.dirs=/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext, sun.boot.class.path=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsfd.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar:/Library/Genuitec/Common/plugins/com.genuitec.eclipse.j2eedt.core_8.5.0.me201003231033/data/libraryset/EE_5/javaee.jar:/Library/Genuitec/Common/plugins/com.genuitec.eclipse.j2eedt.core_8.5.0.me201003231033/data/libraryset/EE_5/jsf-impl.jar:/Library/Genuitec/Common/plugins/com.genuitec.eclipse.j2eedt.core_8.5.0.me201003231033/data/libraryset/EE_5/jsf-api.jar:/Library/Genuitec/Common/plugins/com.genuitec.eclipse.j2eedt.core_8.5.0.me201003231033/data/libraryset/EE_5/jstl-1.2.jar, java.vendor=Apple Inc., file.separator=/, java.vendor.url.bug=http://bugreport.apple.com/, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, mrj.version=1050.1.5.0_24-357, hibernate.query.jpaql_strict_compliance=true, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, sun.cpu.isalist=}
+ 

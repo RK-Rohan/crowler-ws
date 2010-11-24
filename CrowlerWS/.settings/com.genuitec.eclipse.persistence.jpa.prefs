@@ -1,0 +1,13 @@
+#Tue Sep 28 09:37:22 CEST 2010
+connectionInfoProperty=MYSQLConnector
+detect.m2m=true
+detect.o2o=true
+eclipse.preferences.version=1
+enableAnalysisProperty=true
+generate.version=false
+newCatalogProperty=spiderdb
+re.daoFile=src/applicationContext.xml
+re.lemfId=entityManagerFactory
+re.settings=
+re.strategy=
+schemaProperty=spiderdb
